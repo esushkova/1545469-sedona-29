@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена](https://up.htmlacademy.ru/htmlcss/29/user/1545469).
-* Наставник: [Александр Карташов] (https://htmlacademy.ru/profile/id77080).
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 

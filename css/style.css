@@ -1,0 +1,145 @@
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-blue: #81B3D2;
+    --darker-blue: #669EC0;
+    --darkest-blue: #5496BD;
+    --basic-white: #ffffff;
+    --background-grey: #F2F2F2;
+    --background-darker-grey: #EBEBEB;
+    --triangle-grey: #CACACA;
+    --basic-grey: #666666;
+    --dark-grey: #333333;
+    --plus-minus-calendar-grey: #A9A9A9;
+    --checkbox-block-grey: #6A6A6A;
+    --range-circle-grey: #ABABAB;
+    --brown: #766357;
+    --darker-brown: #604E43;
+    --darsest-brown: #503E33;
+    --main-page-grey: #EEEEEE;
+  }
+
+.main-body {
+    font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase; 
+}
+
+a {
+    text-decoration: none;
+  }
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+  
+.site-navigation {
+    list-style: none;
+  }
+
+.sedona {
+    line-height: 26px;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    background-color: var(--basic-white);
+  }
+
+.tagline {
+    font-weight: bold;
+    font-size: 21px;
+    color: var(--basic-black);
+  }
+
+.lead {
+    font-size: 14px;
+    color: var(--dark-grey);
+  }
+
+.first-reason {
+    font-weight: normal;
+    color: var(--basic-white);
+    align-items: center;
+    text-align: center;
+    background-color: var(--basic-blue);
+  }
+
+.reasons-tagline {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+  }
+
+.first-tagline {
+    color: var(--basic-white);
+  }
+
+.text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--dark-grey);
+  }
+
+.first-reason-text {
+    color: var(--basic-white);
+  }
+
+.list-interesting {
+    list-style: none;
+    background-color: var(--basic-white);
+  }
+
+.black-tagline {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: var(--basic-black);
+  }
+
+.list-reasons {
+    list-style: none;
+    background-color: var(--main-page-grey);
+  }
+
+.search {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+
+.search-button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-white);
+    background-color: var(--brown);
+  }
+
+.main-footer {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+
+.contacts {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+.list-networks {
+    list-style: none;  
+  }
+
+.developer {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  

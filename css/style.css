@@ -29,18 +29,18 @@ a {
     text-decoration: none;
   }
 
-.main-navigation {
+.navigation-wrapper {
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
     background-color: var(--basic-white);
   }
   
-.site-navigation {
+.navigation-list {
     list-style: none;
   }
 
-.sedona {
+.about-sedona {
     line-height: 26px;
     font-weight: normal;
     align-items: center;
@@ -48,13 +48,13 @@ a {
     background-color: var(--basic-white);
   }
 
-.tagline {
+.about-sedona_title {
     font-weight: bold;
     font-size: 21px;
     color: var(--basic-black);
   }
 
-.lead {
+.about-sedona_text {
     font-size: 14px;
     color: var(--dark-grey);
   }
@@ -67,60 +67,98 @@ a {
     background-color: var(--basic-blue);
   }
 
-.reasons-tagline {
+.first-reason_title {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-  }
-
-.first-tagline {
     color: var(--basic-white);
   }
 
-.text {
+.first-reason_text {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: var(--dark-grey);
-  }
-
-.first-reason-text {
     color: var(--basic-white);
   }
 
-.list-interesting {
+.interesting-list {
     list-style: none;
     background-color: var(--basic-white);
   }
 
-.black-tagline {
+.interesting-list_title {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
     color: var(--basic-black);
   }
 
-.list-reasons {
+.interesting-list_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--dark-grey);
+}
+
+.second-reason {
+  font-weight: normal;
+  color: var(--basic-white);
+  align-items: center;
+  text-align: center;
+  background-color: var(--basic-blue);
+}
+
+.second-reason_title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+
+.second-reason_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.reasons-list {
     list-style: none;
     background-color: var(--main-page-grey);
   }
 
-.search {
-    font-size: 30px;
-    line-height: 24px;
-    font-weight: bold;
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-  }
+.reasons-list_title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
 
-.search-button {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-white);
-    background-color: var(--brown);
-  }
+.reasons-list_text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--dark-grey);
+}
+
+.search {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.search_button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--brown);
+ }
 
 .main-footer {
     color: var(--basic-black);
@@ -133,7 +171,7 @@ a {
     line-height: 26px;
   }
 
-.list-networks {
+.networks_list {
     list-style: none;  
   }
 
@@ -143,3 +181,88 @@ a {
     line-height: 26px;
   }
   
+/*Hotels page*/
+
+.hotels-body {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+.navigation-item_hotels {
+  color: var(--brown);
+}
+
+.search-filter {
+  background-color: var(--dark-grey);
+}
+
+.search-results {
+  list-style: none;
+}
+
+.search-results_text {
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: var(--basic-black);
+}
+
+.search-results_title {
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: var(--basic-black);
+}
+
+.search-results_item {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-blue);
+}
+
+.search-results_sort_up {
+  color: var(--triangle-grey);
+}
+
+.search-results_sort_down {
+  color: var(--basic-blue);
+}
+
+.hotels_title {
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: var(--basic-black);
+}
+
+.hotels_text {
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+color: var(--dark-grey);
+}
+
+.hotels-button {
+font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+color: var(--basic-white);
+}
+
+.hotels-button_light {
+  background-color: var(--basic-blue);
+}
+
+.hotels-button_dark {
+  background-color: var(--brown);
+}
+
+.hotels_rating {
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+color: var(--basic-grey);
+background-color: var( --background-grey);
+}

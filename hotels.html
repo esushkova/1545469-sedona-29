@@ -7,81 +7,81 @@
         <link href="normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
     </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="">Информация</a></li>
-                    <li><a href="">Фото и видео</a></li>
-                    <li><a href="">Карта штата</a></li>
-                    <li>Гостиницы</li>
+    <body class="hotels-body">
+        <header class="main-header">
+            <nav class="navigation-wrapper">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a class="navigation-link" href="">Информация</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="">Фото и видео</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="">Карта штата</a></li>
+                    <li class="navigation-item_hotels">Гостиницы</li>
                 </ul>
             </nav>
             <a href="index.html"><img src="https://via.placeholder.com/138x70" width="138" height="70" /></a>
         </header>
         <main>
             <h1>Поиск Гостиницы</h1>
-            <section>
-                <h2>Фильтр поиска</h2>
+            <section class="search-filter">
+                <h2 class="search-filter_title">Фильтр поиска</h2>
                 <!-- Здесь будет форма фильтра -->
             </section>
-            <section>
-                <p>Найдено: 3</p>
-                <h4>Сортировка:</h4>
-                <ul>
-                    <li><a href="">по цене</a></li>
-                    <li><a href="">по типу</a></li>
-                    <li><a href="">по рейтингу</a></li>
+            <section class="search-results">
+                <p class="search-results_text">Найдено: 3</p>
+                <h4 class="search-results_title">Сортировка:</h4>
+                <ul class="search-results_list">
+                    <li class="search-results_item"><a class="search-results_link" href="">по цене</a></li>
+                    <li class="search-results_item"><a class="search-results_link" href="">по типу</a></li>
+                    <li class="search-results_item"><a class="search-results_link" href="">по рейтингу</a></li>
                 </ul>
-                <ul>
-                    <li><a href="">&#9650;</a></li>
-                    <li><a href="">&#9660;</a></li>
+                <ul class="search-results_sort">
+                    <li class="search-results_sort_up"><a href="">&#9650;</a></li>
+                    <li class="search-results_sort_down"><a href="">&#9660;</a></li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="hotel-1.html">
-                            <h3>Amara Resort & SPA</h3>
+                <ul class="hotels_list">
+                    <li class="hotels_item">
+                        <a class="hotels_link" href="hotel-1.html">
+                            <h3 class="hotels_title">Amara Resort & SPA</h3>
                         </a>
                         <img src="img/hotel-1.jpg" width="132" height="90" alt="Amara Resort & SPA" />
-                        <p>
+                        <p class="hotels_text">
                             Гостиница
                         </p>
-                        <p>
+                        <p class="hotels_text">
                             от 4000 Р.
                         </p>
-                        <a href="blank.html">Подробнее</a>
-                        <a href="blank.html">Забронировать</a>
-                        <p>Рейтинг: 8,5</p>
+                        <a class="hotels-button hotels-button_light" href="blank.html">Подробнее</a>
+                        <a class="hotels-button hotels-button_dark" href="blank.html">Забронировать</a>
+                        <p class="hotels_rating">Рейтинг: 8,5</p>
                     </li>
-                    <li>
-                        <a href="hotel-2.html">
-                            <h3>Desert Quail Inn</h3>
+                    <li class="hotels_item">
+                        <a  class="hotels_link" href="hotel-2.html">
+                            <h3 class="hotels_title">Desert Quail Inn</h3>
                         </a>
                         <img src="img/hotel-2.jpg" width="132" height="90" alt="Desert Quail Inn" />
-                        <p>
+                        <p class="hotels_text">
                             Мотель 
                         </p>
-                        <p>
+                        <p class="hotels_text">
                             от 3000 Р.
                         </p>
-                            <a href="blank.html">Подробнее</a>
-                            <a href="blank.html">Забронировать</a>
-                        <p>Рейтинг: 8,5</p>
+                            <a class="hotels-button hotels-button_light" href="blank.html">Подробнее</a>
+                            <a class="hotels-button hotels-button_dark" href="blank.html">Забронировать</a>
+                        <p class="hotels_rating">Рейтинг: 8,5</p>
                     </li>
-                    <li>
-                        <a href="hotel-3.html">
-                            <h3>Vilias at Poco Diablo</h3>
+                    <li class="hotels_item">
+                        <a class="hotels_link" href="hotel-3.html">
+                            <h3 class="hotels_title">Vilias at Poco Diablo</h3>
                         </a>
                         <img src="img/hotel-3.jpg" width="132" height="90" alt="Vilias at Poco Diablo" />
-                        <p>
+                        <p class="hotels_text">
                             Апартаменты
                         </p>
-                        <p>
+                        <p class="hotels_text">
                             от 2000 Р.
                         </p>
-                            <a href="blank.html">Подробнее</a>
-                            <a href="blank.html">Забронировать</a>
-                        <p>Рейтинг: 9,2</p>
+                            <a class="hotels-button hotels-button_light" href="blank.html">Подробнее</a>
+                            <a class="hotels-button hotels-button_dark" href="blank.html">Забронировать</a>
+                        <p class="hotels_rating">Рейтинг: 9,2</p>
                     </li>
                 </ul>
             </section>

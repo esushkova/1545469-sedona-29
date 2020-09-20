@@ -30,15 +30,18 @@ a {
   }
 
 .navigation-wrapper {
-    font-size: 14px;
-    line-height: 26px;
-    color: var(--basic-black);
     background-color: var(--basic-white);
   }
   
 .navigation-list {
     list-style: none;
   }
+
+.navigation-item {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
 
 .about-sedona {
     line-height: 26px;
@@ -145,11 +148,21 @@ a {
 }
 
 .search {
+  background-color: var(--basic-white);
+}
+
+.search_title {
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+}
+
+.search_text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--dark-grey);
 }
 
 .search_button {
@@ -181,6 +194,7 @@ a {
     line-height: 26px;
   }
   
+
 /*Hotels page*/
 
 .hotels-body {
@@ -190,15 +204,14 @@ a {
 }
 
 .navigation-item_hotels {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
   color: var(--brown);
 }
 
 .search-filter {
   background-color: var(--dark-grey);
-}
-
-.search-results {
-  list-style: none;
 }
 
 .search-results_text {
@@ -215,11 +228,33 @@ line-height: 18px;
 color: var(--basic-black);
 }
 
-.search-results_item {
+.search-results_list {
+  list-style: none;
+}
+
+.search-results_item_price {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-blue);
+}
+
+.search-results_item_type {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.search-results_item_rating {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.search-results_sort {
+  list-style: none;
 }
 
 .search-results_sort_up {
@@ -228,6 +263,10 @@ color: var(--basic-black);
 
 .search-results_sort_down {
   color: var(--basic-blue);
+}
+
+.hotels_list {
+  list-style: none;
 }
 
 .hotels_title {

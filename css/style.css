@@ -37,10 +37,27 @@ a {
     list-style: none;
   }
 
-.navigation-item {
+.navigation-link {
+  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+}
+
+.navigation-link:hover {
+  font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+color: var(--basic-blue);
+}
+
+.navigation-link:active {
+  font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+color: var(--basic-black);
+mix-blend-mode: normal;
+opacity: 0.3;
 }
 
 .about-sedona {
@@ -166,11 +183,29 @@ a {
 }
 
 .search_button {
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
   color: var(--basic-white);
   background-color: var(--brown);
+  text-transform: uppercase; 
+ }
+
+ .search_button:hover {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--darker-brown);
+  text-transform: uppercase; 
+ }
+
+ .search_button:active {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--darsest-brown);
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase; 
  }
 
 .main-footer {
@@ -184,16 +219,43 @@ a {
     line-height: 26px;
   }
 
+.contacts_link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  }
+
+.contacts_text {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.contacts_phone {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
 .networks_list {
     list-style: none;  
   }
 
-.developer {
+.copyright {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
   }
   
+.networks_item {
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+}
 
 /*Hotels page*/
 
@@ -204,9 +266,9 @@ a {
 }
 
 .navigation-item_hotels {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
+  font-weight: bold;
+font-size: 14px;
+line-height: 26px;
   color: var(--brown);
 }
 
@@ -232,36 +294,69 @@ color: var(--basic-black);
   list-style: none;
 }
 
-.search-results_item_price {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  color: var(--basic-blue);
-}
-
-.search-results_item_type {
+.search-results_item {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
 }
 
-.search-results_item_rating {
+.search-results_link {
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: var(--basic-black);
+mix-blend-mode: normal;
+opacity: 0.3;
+}
+
+.search-results_link.active {
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  color: var(--basic-black);
+font-size: 12px;
+line-height: 18px;
+color: var(--basic-blue);
+}
+
+.search-results_link:hover {
+  font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: var(--basic-blue);
+}
+
+.search-results_link:active {
+  font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: var(--basic-black);
+}
+
+.search-results_link.active {
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: var(--basic-blue);
 }
 
 .search-results_sort {
   list-style: none;
-}
-
-.search-results_sort_up {
   color: var(--triangle-grey);
 }
 
-.search-results_sort_down {
+.sort_up:before {
+  content: "\25B2";
+}
+
+.sort_up:hover {
+  color: var(--basic-black);
+}
+
+.sort_up:active {
+  color: var(--basic-blue);
+}
+
+.sort_down:before {
+  content: "\25BC";
   color: var(--basic-blue);
 }
 
@@ -274,6 +369,22 @@ font-weight: bold;
 font-size: 21px;
 line-height: 26px;
 color: var(--basic-black);
+}
+
+.hotels_title:hover {
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: var(--basic-blue);
+}
+
+.hotels_title:active {
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: var(--basic-black);
+mix-blend-mode: normal;
+opacity: 0.3;
 }
 
 .hotels_text {
@@ -294,8 +405,26 @@ color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 
+.hotels-button_light:hover {
+  background-color: var(--darker-blue);
+}
+
+.hotels-button_light:active {
+  background-color: var(--darkest-blue);
+  color: rgba(255,255,255,0.3);
+}
+
 .hotels-button_dark {
   background-color: var(--brown);
+}
+
+.hotels-button_dark:hover {
+  background-color: var(--darker-brown);
+}
+
+.hotels-button_dark:active {
+  background-color: var(--darsest-brown);
+  color: rgba(255,255,255,0.3);
 }
 
 .hotels_rating {

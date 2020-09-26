@@ -251,10 +251,19 @@ opacity: 0.3;
     line-height: 26px;
   }
   
-.networks_item {
+.networks_icon {
+  display: block;
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
+}
+
+.networks_icon:hover {
+  background-color: var(--darker-blue);
+}
+
+.networks_icon:active {
+  background-color: var(--darkest-blue);
 }
 
 /*Hotels page*/

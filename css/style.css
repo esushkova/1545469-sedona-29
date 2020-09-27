@@ -25,6 +25,11 @@
     text-transform: uppercase; 
 }
 
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 a {
     text-decoration: none;
   }
@@ -78,21 +83,6 @@ line-height: 26px;
 color: var(--basic-black);
 mix-blend-mode: normal;
 opacity: 0.3;
-}
-
-.welcome {
-  display: grid;
-}
-
-.welcome_logo {
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 1;
-}
-
-.welcome_background {
-  grid-column: 1;
-  grid-row: 1;
 }
 
 .about-sedona {
@@ -274,12 +264,9 @@ opacity: 0.3;
 .main-footer {
     color: var(--basic-black);
     background-color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-
-.main-footer .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
 .contacts {
     font-weight: bold;

@@ -29,6 +29,26 @@ a {
     text-decoration: none;
   }
 
+/* Grid */
+
+.page {
+  height: 100%;
+  width: auto;
+  min-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.page-body {
+  min-height: 100%;
+}
+
+.main-header {
+  margin-bottom: 77.35px;
+}
+
+/* Main navigation */
+
 .navigation-wrapper {
     background-color: var(--basic-white);
   }
@@ -60,12 +80,29 @@ mix-blend-mode: normal;
 opacity: 0.3;
 }
 
+.welcome {
+  display: grid;
+}
+
+.welcome_logo {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.welcome_background {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .about-sedona {
     line-height: 26px;
     font-weight: normal;
     align-items: center;
     text-align: center;
     background-color: var(--basic-white);
+    width: auto;
+  height: 216px;
   }
 
 .about-sedona_title {
@@ -78,6 +115,11 @@ opacity: 0.3;
     font-size: 14px;
     color: var(--dark-grey);
   }
+
+.first-reason_columns {
+  display: grid;
+  grid-template-columns: 1fr 800px;
+}
 
 .first-reason {
     font-weight: normal;
@@ -105,6 +147,10 @@ opacity: 0.3;
 .interesting-list {
     list-style: none;
     background-color: var(--basic-white);
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 330px;
+  text-align: center;
   }
 
 .interesting-list_title {
@@ -122,10 +168,14 @@ opacity: 0.3;
   color: var(--dark-grey);
 }
 
+.second-reason_columns {
+  display: grid;
+  grid-template-columns: 800px 1fr;
+}
+
 .second-reason {
   font-weight: normal;
   color: var(--basic-white);
-  align-items: center;
   text-align: center;
   background-color: var(--basic-blue);
 }
@@ -148,6 +198,11 @@ opacity: 0.3;
 .reasons-list {
     list-style: none;
     background-color: var(--main-page-grey);
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 256px;
+  margin-top: 0px;
+  text-align: center;
   }
 
 .reasons-list_title {
@@ -165,7 +220,9 @@ opacity: 0.3;
 }
 
 .search {
+  height: 291px;
   background-color: var(--basic-white);
+  text-align: center;
 }
 
 .search_title {
@@ -183,6 +240,8 @@ opacity: 0.3;
 }
 
 .search_button {
+  width: 568px;
+  height: 86px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -208,10 +267,19 @@ opacity: 0.3;
   text-transform: uppercase; 
  }
 
+.map {
+  text-align: center;
+}
+
 .main-footer {
     color: var(--basic-black);
     background-color: var(--basic-white);
   }
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .contacts {
     font-weight: bold;

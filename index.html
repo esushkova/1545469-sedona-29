@@ -22,14 +22,15 @@
         <main>
             <h1 hidden="true">Welcome to Sedona</h1>
             <section class="welcome">
-                <img src="img/main_welcome.svg" width="456.65" height="350.88" alt="Welcome to Sedona" />
-                <img src="http://placehold.it/1200x509" width="1200" height="509" />
+                <img class="welcome_logo" src="img/main_welcome.svg" width="456.65" height="350.88" alt="Welcome to Sedona" /> 
+                <img class="welcome_background" src="http://placehold.it/1200x509" width="1200" height="509" />
             </section>
             <section class="about-sedona">
                 <p class="about-sedona_title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
                 <p class="about-sedona_text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </section>
             <section class="reasons">
+                <div class="first-reason_columns">
                 <div class ="first-reason">
                     <h2 class="first-reason_title">
                         Настоящий<br/>
@@ -37,8 +38,9 @@
                     </h2>
                     <p class="first-reason_text">-№1-</p>
                     <p class="first-reason_text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-                <img src="img/image_city.jpg" width="800" height="256" alt="Городок"/>
+            </div>
+            <img src="img/image_city.jpg" width="800" height="256" alt="Городок"/>
+        </div>
                 <ul class="interesting-list">
                     <li class="interesting-list_item">
                         <h2 class="interesting-list_title">Жильё</h2>
@@ -53,6 +55,7 @@
                         <p class="interesting-list_text">Не только китайского, но и местного производства!</p>
                     </li>
                 </ul>
+                <div class="second-reason_columns">
                 <img src="img/image_mountain.jpg" width="800" height="256" alt="Мост Дьявола" />
                 <div class="second-reason">
                     <h2 class="second-reason_title">
@@ -62,6 +65,7 @@
                     <p class="second-reason_text">-№2-</p>
                     <p class="second-reason_text">Да, по нему можно пройтись! Если конечно вы осмелитесь!</p>
                 </div>
+            </div>
                 <ul class="reasons-list">
                     <li class="reasons-list_item">
                         <h2 class="reasons-list_title">Небольшая площадь</h2>
@@ -94,6 +98,7 @@
             </section>
         </main>
         <footer class="main-footer">
+            <div class="container">
             <div class="contacts">
                 <a class="contacts_link" href="">#visitSEDONA</a>
                 <p class="contacts_text">ТЕЛ: <a class ="contacts_phone" href="tel:+74956660166">+7(495) 666-01-66</a></p>
@@ -118,6 +123,7 @@
                     <a class="copyright_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="113.98" height="39.78" alt="html academy" /></a>
                 </p>
             </div>
+        </div>
         </footer>
     </body>
 </html>

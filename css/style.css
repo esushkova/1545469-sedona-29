@@ -428,6 +428,13 @@ color: var(--basic-blue);
   list-style: none;
 }
 
+.hotels_item {
+  display: grid;
+  grid-template-columns: 135px 1fr 1fr;
+  grid-template-rows: 150px;
+  column-gap: 29px;
+}
+
 .hotels_title {
 font-weight: bold;
 font-size: 21px;

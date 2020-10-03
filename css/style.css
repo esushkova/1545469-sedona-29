@@ -54,12 +54,22 @@ a {
 
 /* Main navigation */
 
+
 .navigation-wrapper {
     background-color: var(--basic-white);
+   
   }
   
 .navigation-list {
     list-style: none;
+    display: flex;
+   padding: 15px 15px;
+   margin-left: 72px;
+  }
+
+  .navigation-item {
+    display: flex;
+    width: 100%;
   }
 
 .navigation-link {
@@ -297,8 +307,18 @@ opacity: 0.3;
 }
 
 .networks_list {
-    list-style: none;  
+    list-style: none;
+    display: flex;
+    align-items: center;
   }
+
+  .networks_item {
+    padding-right: 6px;
+  }
+
+.networks_icon {
+  
+}
 
 .copyright {
     font-weight: normal;

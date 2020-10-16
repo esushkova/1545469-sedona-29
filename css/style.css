@@ -240,18 +240,21 @@ padding-bottom: 30px;
   content: url(../img/housing.png);
   position: absolute;
   bottom: 50px;
+  left: -5px;
 }
 
 .meal:before {
   content: url(../img/meal.png);
   position: absolute;
   bottom: 50px;
+  left: -15px;
 }
 
 .souvenir:before {
   content: url(../img/souvenir.png);
   position: absolute;
   bottom: 50px;
+  left: 20px;
 }
 
 .interesting-list_text {
@@ -479,17 +482,17 @@ padding-bottom: 30px;
  justify-content: center;
   }
 
-  .academy_logo {
+  .copyright_logo {
     width: 115px;
     height: 41px;
     fill: #231F20;
     }
 
-  .academy_logo:hover {
+  .copyright_logo:hover {
    fill: var(--basic-blue);
   }
   
-  .academy_logo:active {
+  .copyright_logo:active {
   fill-opacity: 0.3;
   }
 

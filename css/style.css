@@ -121,6 +121,17 @@ height: 70px;
 top: 0px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .welcome {
   width: auto;
   height: 509px;
@@ -488,11 +499,11 @@ padding-bottom: 30px;
     fill: #231F20;
     }
 
-  .copyright_logo:hover {
+    a:hover path {
    fill: var(--basic-blue);
   }
   
-  .copyright_logo:active {
+  a:active path {
   fill-opacity: 0.3;
   }
 
@@ -532,14 +543,100 @@ line-height: 26px;
 
 .search-filter {
   background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
   background-color: var(--dark-grey);
-  width: auto;
-  height: 217px;
   margin: 0;
   color: var(--basic-white);
+  display: flex;
+  width: 1200;
+
 }
 
 .search-filter_title {
+  margin: 0;
+
+}
+
+/*Checkbox*/
+
+.option {
+  display: block;
+  margin-bottom: 23px;
+  margin-left: ;
+}
+
+.option:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.check {
+padding-left: 40px;
+}
+
+.check__input {
+position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+
+  /*position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;*/
+  margin: 0;
+}
+
+.check__box {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url('data:image/svg+xml,%3Csvg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="white"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  margin-left: -40px;
+}
+
+.checkbox__structure {
+  margin: 0;
+  padding: 0;
+  margin-right: 119px;
+}
+
+.checkbox__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+/*Checked*/
+
+.check__input:checked + .check__box {
+  background-image: url('data:image/svg+xml,%3Csvg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z" fill="white"/%3E%3Cpath d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" fill="white"/%3E%3C/svg%3E');
+}
+
+/*Focused*/
+
+.check__input:checked:focus + .check__box {
+  background-image: url('data:image/svg+xml,%3Csvg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z" fill="white"/%3E%3Cpath d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" fill="white"/%3E%3C/svg%3E');
+}
+
+.check__input:focus + .check__box {
+  background-image: url('data:image/svg+xml,%3Csvg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="white"/%3E%3C/svg%3E');
+}
+
+/*Disabled*/
+
+.check__input:checked:disabled + .check__box {
+  background-image: url('data:image/svg+xml,%3Csvg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z" fill="%236A6A6A"/%3E%3Cpath d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" fill="%236A6A6A"/%3E%3C/svg%3E');
+}
+
+.check__input:disabled + .check__box {
+  background-image: url('data:image/svg+xml,%3Csvg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="%236A6A6A"/%3E%3C/svg%3E');
+}
+
+.search-filter {
+  padding-left: 72px;
+  padding-top: 26.5px;
+  padding-bottom: 31px;
   margin: 0;
 }
 

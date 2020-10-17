@@ -92,21 +92,25 @@
                 </p>
                 <button type="button" class="search_button">Поиск гостиницы в Седоне</button>
                 <!-- Здесь будет форма поиска -->
-                <form action="https://echo.htmlacademy.ru/courses" method="get">
+                <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+                    <fieldset class="search-form__field">
                     <label>
                         Дата заезда:
-                        <input type="text" name="total" id="check-in" placeholder="24 апреля 2017">
+                        <input class="date" type="text" name="total" id="check-in" placeholder="24 апреля 2017">
                     </label>
                 <label>
                     Дата выезда:
-                    <input type="text" name="total" id="check-out" value="4 июля 2017">
+                    <input class="date" type="text" name="total" id="check-out" value="4 июля 2017">
                 </label>
                 <label>
+                    Взрослые:
                     <input type="number"> 
                 </label>
                 <label>
+                    Дети:
                     <input type="number"> 
                 </label>
+            </fieldset>
                   </form>
             </section>
             <section class="map">

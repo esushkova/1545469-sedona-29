@@ -559,6 +559,11 @@ line-height: 26px;
 
 /*Checkbox*/
 
+fieldset {
+  border: none;
+  display: flex;
+}
+
 .option {
   display: block;
   margin-bottom: 23px;

@@ -23,8 +23,9 @@
         <main>
             <h1 class="visually-hidden">Поиск Гостиницы</h1>
             <section class="search-filter">
-                <!-- <h2 class="search-filter_title">Фильтр поиска</h2> -->
-                <!-- Скрыть заголовок после добавления формы фильтра -->
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+              
             <div class="checkbox__structure">
                 <h3 class="checkbox__title">Инфраструктура:</h3>
             <label class="check option">
@@ -49,6 +50,7 @@
                 WI-FI
             </label>
         </div>
+  
         <div class="checkbox__housing">
             <h3 class="checkbox__title">Тип жилья:</h3>
             <label class="check option">
@@ -67,12 +69,13 @@
             </label>
             <label class="check option">
                 <input class="check__input" type="checkbox" checked>
-                <span class="check__box">
-                    
+                <span class="check__box">   
                 </span>
                 Апартаменты
             </label>
         </div>
+        </fieldset>
+        </form>
             </section>
             </section>
             <section class="search-results">

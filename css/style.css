@@ -547,7 +547,6 @@ line-height: 26px;
   background-color: var(--dark-grey);
   margin: 0;
   color: var(--basic-white);
-  display: flex;
   width: 1200;
 
 }
@@ -557,9 +556,13 @@ line-height: 26px;
 
 }
 
+.filter {
+  display: flex;
+}
+
 /*Checkbox*/
 
-fieldset {
+.checkboxes {
   border: none;
   display: flex;
 }
@@ -637,6 +640,37 @@ clip: rect(0 0 0 0);
 .check__input:disabled + .check__box {
   background-image: url('data:image/svg+xml,%3Csvg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="%236A6A6A"/%3E%3C/svg%3E');
 }
+
+/*Slider*/
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.price-controls {
+  width: 224px;
+  height: 36px;
+  display: flex;
+ border: 2px solid white;
+ box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.price-controls__input {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 110px;
+}
+
+legend {
+  margin-bottom: 10.5px;
+}
+
+
+
 
 .search-filter {
   padding-left: 72px;

@@ -24,8 +24,8 @@
             <h1 class="visually-hidden">Поиск Гостиницы</h1>
             <section class="search-filter">
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset>
-              
+                    <fieldset class="checkboxes">
+<!--Первый блок чекбоксов-->
             <div class="checkbox__structure">
                 <h3 class="checkbox__title">Инфраструктура:</h3>
             <label class="check option">
@@ -50,7 +50,7 @@
                 WI-FI
             </label>
         </div>
-  
+<!--Второй блок чекбоксов-->
         <div class="checkbox__housing">
             <h3 class="checkbox__title">Тип жилья:</h3>
             <label class="check option">
@@ -75,6 +75,26 @@
             </label>
         </div>
         </fieldset>
+
+<!--Слайдер цены-->
+    <fieldset class="filter-item">
+        <legend>Стоимость в сутки (Р):</legend>
+<!--Поля ввода-->
+        <div class="price-controls">
+            <input class="price-controls__input" type="text" name="min-price" placeholder="ОТ 0">
+            <input class="price-controls__input" type="text" name="max-price" placeholder="ДО 3000">      
+        </div>
+<!--Слайдер-->
+        <div class="range-filter">
+            <div class="range-controls">
+                <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+            </div>
+        </div>
+    </fieldset>
         </form>
             </section>
             </section>

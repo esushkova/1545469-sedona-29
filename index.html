@@ -92,26 +92,6 @@
                 </p>
                 <button type="button" class="search_button">Поиск гостиницы в Седоне</button>
                 <!-- Здесь будет форма поиска -->
-                <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-                    <fieldset class="search-form__field">
-                    <label>
-                        Дата заезда:
-                        <input class="date" type="text" name="total" id="check-in" placeholder="24 апреля 2017">
-                    </label>
-                <label>
-                    Дата выезда:
-                    <input class="date" type="text" name="total" id="check-out" value="4 июля 2017">
-                </label>
-                <label>
-                    Взрослые:
-                    <input type="number"> 
-                </label>
-                <label>
-                    Дети:
-                    <input type="number"> 
-                </label>
-            </fieldset>
-                  </form>
             </section>
             <section class="map">
                 <img src="img/map.jpg" width="1200" height="509" alt="Карта Седоны" />
@@ -156,7 +136,30 @@
                 </a>
             </div>
         </footer>
+
+<!--Модальное окно-->
+<section class="modal modal-search">
+    <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <label>
+            Дата заезда:
+            <input class="modal-search__date" type="text" name="total" id="check-in" placeholder="24 апреля 2017">
+        </label>
+        <label>
+            Дата выезда:
+            <input class="modal-search__date" type="text" name="total" id="check-out" value="4 июля 2017">
+        </label>
+        <label class="modal-search__adult">
+            Взрослые:
+            <input type="number"> 
+        </label>
+        <label class="modal-search__kids">
+            Дети:
+            <input type="number"> 
+        </label>
+        <button class="button modal-search__button" type="submit">Найти</button>
+    </form>
+</section>
+
     </div>
     </body>
 </html>
-

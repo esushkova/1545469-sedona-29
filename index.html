@@ -140,21 +140,25 @@
 <!--Модальное окно-->
 <section class="modal modal-search">
     <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <label>
+        <label class="search-form__item">
             Дата заезда:
-            <input class="modal-search__date" type="text" name="total" id="check-in" placeholder="24 апреля 2017">
+            <input class="modal-search__date" type="text" value="24 апреля 2017">
         </label>
-        <label>
+        <label class="search-form__item">
             Дата выезда:
-            <input class="modal-search__date" type="text" name="total" id="check-out" value="4 июля 2017">
+            <input class="modal-search__date" type="text" value="4 июля 2017">
         </label>
-        <label class="modal-search__adult">
+        <label class="search-form__item">
             Взрослые:
-            <input type="number"> 
+            <button class="button-min" type="submit">-</button>
+            <input class="modal-search_guests" type="text" value="2">
+            <button class="button-max" type="submit">+</button>
         </label>
-        <label class="modal-search__kids">
+        <label class="search-form__item">
             Дети:
-            <input type="number"> 
+            <button class="button-min" type="submit">-</button>
+            <input class="modal-search_guests" type="text" value="0"> 
+            <button class="button-max" type="submit">+</button>
         </label>
         <button class="button modal-search__button" type="submit">Найти</button>
     </form>

@@ -443,7 +443,6 @@ color: var(--basic-black);
 padding: 0;
 }
 
-
 .search-form {
 display: flex;
 flex-wrap: wrap;
@@ -455,19 +454,50 @@ justify-content: space-between;
 }
 
 .modal-search__date {
-  width: 346px;
+  border: none;
   padding: 0;
   margin: 0;
+  background: #F2F2F2;
   margin-bottom: 29px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  width: 346px;
+  height: 38px;
 }
 
-.number {
-  width: 114px;
+.modal-search_guests {
+  width: 36px;
+  height: 38px;
+  border: none;
   padding: 0;
   margin: 0;
+  background: #F2F2F2;
+  text-align: center;
+  font-family: PT Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+}
+
+.button-min {
+  width: 38px;
+  height: 39px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  }
+
+.button-max {
+  width: 38px;
+  height: 39px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .modal-search__button {

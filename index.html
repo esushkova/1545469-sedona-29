@@ -141,24 +141,30 @@
 <section class="modal modal-search">
     <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
         <label class="search-form__item">
-            Дата заезда:
-            <input class="modal-search__date" type="text" value="24 апреля 2017">
+            <span class="modal-text">Дата заезда:</span>
+            <input class="modal-check-in" type="text" value="24 апреля 2017">
         </label>
         <label class="search-form__item">
-            Дата выезда:
-            <input class="modal-search__date" type="text" value="4 июля 2017">
+            <span class="modal-text">Дата выезда:</span>
+            <input class="modal-check-out" type="text" value="4 июля 2017">
         </label>
-        <label class="search-form__item">
-            Взрослые:
-            <button class="button-min" type="submit">-</button>
+        <label class="search-form__guests">
+            <spav class="modal-text">Взрослые:</spav>
+        <div class="modal-adult">
+                <button class="button-min button-min-adult" type="button" aria-label="Меньше"></button>
             <input class="modal-search_guests" type="text" value="2">
-            <button class="button-max" type="submit">+</button>
+            <button class="button-max button-max-adult" type="button" aria-label="Больше"></button>
+        </div>
         </label>
-        <label class="search-form__item">
-            Дети:
-            <button class="button-min" type="submit">-</button>
+        <label class="search-form__guests">
+            <spav class="modal-text">
+        Дети:
+            </spav>
+           <div class="modal-kids">
+            <button class="button-min button-min-kids" type="submit" aria-label="Меньше"></button>
             <input class="modal-search_guests" type="text" value="0"> 
-            <button class="button-max" type="submit">+</button>
+            <button class="button-max button-max-kids" type="submit" aria-label="Больше"></button>
+        </div>
         </label>
         <button class="button modal-search__button" type="submit">Найти</button>
     </form>

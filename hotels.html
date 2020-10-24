@@ -23,27 +23,28 @@
         <main>
             <h1 class="visually-hidden">Поиск Гостиницы</h1>
             <section class="search-filter">
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset class="checkboxes">
+<form method="get" action="https://echo.htmlacademy.ru">
+    <div class="filter">
+            <fieldset class="checkboxes">
 <!--Первый блок чекбоксов-->
             <div class="checkbox__structure">
                 <h3 class="checkbox__title">Инфраструктура:</h3>
             <label class="check option">
-                <input class="check__input" type="checkbox" checked>
+                <input class="check__input" type="checkbox" name="pool" checked>
                 <span class="check__box">
 
                 </span>
                 Бассейн
             </label>
             <label class="check option">
-                <input class="check__input" type="checkbox">
+                <input class="check__input" type="checkbox" name="parking">
                 <span class="check__box">
                     
                 </span>
                 Парковка
             </label>
             <label class="check option">
-                <input class="check__input" type="checkbox">
+                <input class="check__input" type="checkbox" name="wi-fi">
                 <span class="check__box">
                     
                 </span>
@@ -54,21 +55,21 @@
         <div class="checkbox__housing">
             <h3 class="checkbox__title">Тип жилья:</h3>
             <label class="check option">
-                <input class="check__input" type="checkbox" checked>
+                <input class="check__input" type="checkbox" name="hotel" checked>
                 <span class="check__box">
                     
                 </span>
                 Гостиница
             </label>
             <label class="check option">
-                <input class="check__input" type="checkbox" checked>
+                <input class="check__input" type="checkbox" name="motel" checked>
                 <span class="check__box">
                     
                 </span>
                 Мотель
             </label>
             <label class="check option">
-                <input class="check__input" type="checkbox" checked>
+                <input class="check__input" type="checkbox" name="apartment" checked>
                 <span class="check__box">   
                 </span>
                 Апартаменты
@@ -76,25 +77,43 @@
         </div>
         </fieldset>
 
-<!--Слайдер цены-->
+<!--Фильтр цены-->
     <fieldset class="filter-item">
         <legend>Стоимость в сутки (Р):</legend>
 <!--Поля ввода-->
         <div class="price-controls">
-            <input class="price-controls__input" type="text" name="min-price" placeholder="ОТ 0">
-            <input class="price-controls__input" type="text" name="max-price" placeholder="ДО 3000">      
+            <label>
+                ОТ
+            <input class="price-controls__input" type="text" name="min-price" value="0">
+        </label>
+    
+        <label>
+            ДО
+            <input class="price-controls__input" type="text" name="max-price" value="3000">
+        </label>
         </div>
-<!--Слайдер-->
+<!--Фильтр-->
         <div class="range-filter">
             <div class="range-controls">
                 <div class="scale">
-                    <div class="bar"></div>
+                    <div class="bar" style="
+                    width: 70%;
+                    margin-left: 0%
+                    "></div>
                   </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                left: 0%
+              "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                left: 70%
+              "></div>
             </div>
         </div>
+        <input class="modal-button" type="submit" value="Показать">
     </fieldset>
+    
+</div>
+
         </form>
             </section>
             </section>

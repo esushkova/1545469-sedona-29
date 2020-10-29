@@ -22,6 +22,7 @@
 
 .body {
   background-color: var(--background-grey);
+
 }
 
 .main-body {
@@ -919,11 +920,13 @@ line-height: 26px;
 .checkboxes {
   border: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .option {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 28px;
 }
 
 .option:nth-last-child(1) {
@@ -960,7 +963,7 @@ clip: rect(0 0 0 0);
 
 .checkbox__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   font-family: PT Sans;
 font-style: normal;
 font-weight: bold;
@@ -1017,7 +1020,7 @@ padding-left: 52px;
 padding-right: 36px;
 padding-top: 6.5px;
 padding-bottom: 8.5px;
-
+margin-bottom: -7px;
 text-transform: uppercase;
 }
 
@@ -1066,7 +1069,7 @@ margin-bottom: 10.5px;
 
 .range-controls .toggle {
   position: absolute;
-  top: -10px;
+  top: -9px;
   left: 0;
   width: 3.8px;
   height: 3.8px;
@@ -1128,7 +1131,7 @@ justify-content: center;
 
 .search-filter {
   padding-left: 72px;
-  padding-top: 26.5px;
+  padding-top: 25.5px;
   padding-bottom: 31px;
   padding-right: 73px;
   margin: 0;
@@ -1149,8 +1152,8 @@ justify-content: center;
   display: flex;
   padding-left: 73px;
  padding-right: 73px;
- padding-top: 29px;
- padding-bottom: 31px;
+ padding-top: 17px;
+ padding-bottom: 20px;
  align-items: center;
 }
 
@@ -1169,8 +1172,10 @@ font-size: 12px;
 line-height: 18px;
 color: var(--basic-black);
 margin: 0;
-margin-right: 40px;
+margin-right: 41px;
+margin-top: -5px;
 }
+
 
 .search-results_list {
   list-style: none;
@@ -1191,13 +1196,14 @@ font-weight: normal;
 font-size: 12px;
 line-height: 18px;
 color: rgba(0, 0, 0, 0.3);
-margin-right: 33px;
+margin-right: 34px;
 text-decoration: underline;
   text-decoration-color: var(--basic-blue);
   text-decoration-style: dotted;
   text-decoration-skip-ink: auto;
   text-underline-position: auto;
 }
+
 
 .search-results_link.active {
   font-weight: normal;
@@ -1238,7 +1244,7 @@ margin-left: auto;
 }
 
 .sort_up {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .sort_up:before {
@@ -1267,10 +1273,10 @@ margin-left: auto;
 .hotels_item {
   display: flex;
  margin: 0;
- padding-top: 23.5px;
- padding-bottom: 30px;
+ padding-top: 29.5px;
+ padding-bottom: 29px;
  padding-left: 73px;
- padding-right: 73px;
+ padding-right: 72px;
 }
 
 .hotel_card {
@@ -1284,6 +1290,7 @@ line-height: 26px;
 color: var(--basic-black);
 margin: 0;
 margin-bottom: 7px;
+    margin-top: -6px;
 }
 
 .hotels_title:hover {

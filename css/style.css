@@ -447,7 +447,8 @@ line-height: 26px;
 .modal-search {
   box-sizing: border-box;
   position: absolute;
-  left: 667.5px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 568px;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -546,6 +547,7 @@ box-sizing: border-box;
   outline: none;
   left: 483px;
   top: 62px;
+  background: transparent;
 }
 
 .calendar-check-in:hover path {
@@ -585,6 +587,7 @@ box-sizing: border-box;
   outline: none;
   left: 483px;
   top: 129px;
+  background: transparent;
 }
 
 .calendar-check-out:hover path {

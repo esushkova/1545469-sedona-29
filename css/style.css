@@ -1318,10 +1318,15 @@ a:active path {
 .hotels_item {
   display: flex;
   margin: 0;
-  padding-top: 29.5px;
+  padding-top: 28.5px;
   padding-bottom: 31px;
   padding-left: 73px;
   padding-right: 72px;
+  border-top: 1px solid var(--border);
+}
+
+.hotels_item:nth-child(3) {
+  border-bottom: 1px solid var(--border);
 }
 
 .hotel_card {

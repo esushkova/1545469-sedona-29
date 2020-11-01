@@ -5,8 +5,7 @@ const checkIn = popUp.querySelector(".modal-check-in");
 
 searchButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popUp.classList.add("popup-show");
-    checkIn.focus();
+    popUp.classList.toggle("popup-hide");
+    popUp.classList.toggle("popup-show");
 });
-
 

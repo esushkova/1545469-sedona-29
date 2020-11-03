@@ -1223,7 +1223,7 @@ a:active path {
 .search-results_wrapper {
   display: flex;
   padding-left: 73px;
-  padding-right: 73px;
+  padding-right: 85px;
   padding-top: 26px;
   padding-bottom: 29px;
   align-items: center;
@@ -1316,7 +1316,7 @@ a:active path {
 }
 
 .sort_up {
-  margin-right: 5px;
+  margin-right: 22px;
 }
 
 .sort_up:before {
@@ -1327,8 +1327,8 @@ a:active path {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 11px solid var(--triangle-grey);
-  top: 312px;
-  right: 170px;
+  top: ;
+  left: ;
 }
 
 .sort_up:hover:before {
@@ -1347,8 +1347,6 @@ a:active path {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 11px solid var(--basic-blue);
-  top: 313px;
-  right: 147px;
 }
 
 .sort_down:hover:after {

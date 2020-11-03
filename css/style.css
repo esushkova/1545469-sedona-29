@@ -463,6 +463,10 @@ a {
   padding-bottom: 55px;
 }
 
+.popup-show {
+  display: block;
+}
+
 .popup-hide {
   display: none;
 }
@@ -1327,8 +1331,6 @@ a:active path {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 11px solid var(--triangle-grey);
-  top: ;
-  left: ;
 }
 
 .sort_up:hover:before {
@@ -1337,6 +1339,12 @@ a:active path {
 
 .sort_up:active:before {
   border-bottom: 11px solid var(--basic-blue);
+}
+
+.sort_up:focus:before {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 11px solid var(--basic-black);
 }
 
 .sort_down:after {
@@ -1355,6 +1363,10 @@ a:active path {
 
 .sort_down:active:after {
   border-top: 11px solid var(--basic-blue);
+}
+
+.sort_down:focus:after {
+  border-top: 11px solid var(--basic-black);
 }
 
 .hotels_list {

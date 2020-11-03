@@ -460,11 +460,6 @@ a {
   padding-bottom: 55px;
 }
 
-.popup-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
 .popup-hide {
   display: none;
 }
@@ -473,19 +468,19 @@ a {
 
 @keyframes bounce {
   0% {
-      transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
 
   70% {
-      transform: translateY(30px);
+    transform: translateY(30px);
   }
 
   90% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -1306,6 +1301,13 @@ a:active path {
 
 .sort_down:before {
   content: "\25BC";
+}
+
+.sort_down:hover {
+  color: var(--basic-black);
+}
+
+.sort_down:active {
   color: var(--basic-blue);
 }
 

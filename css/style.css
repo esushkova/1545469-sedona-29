@@ -565,7 +565,7 @@ a {
 }
 
 .calendar-check-in:focus path {
-  fill: var(--basic-black);
+  fill: var(--basic-blue);
 }
 
 .modal-check-out {
@@ -609,7 +609,7 @@ a {
 }
 
 .calendar-check-out:focus path {
-  fill: var(--basic-black);
+  fill: var(--basic-blue);
 }
 
 .input_kids {
@@ -683,7 +683,7 @@ a {
 }
 
 .button-min-kids:focus:before {
-  background-color: var(--basic-black);
+  background-color: var(--basic-blue);
 }
 
 .button-min-adult:hover:before {
@@ -695,7 +695,7 @@ a {
 }
 
 .button-min-adult:focus:before {
-  background-color: var(--basic-black);
+  background-color: var(--basic-blue);
 }
 
 .button-max {
@@ -735,7 +735,7 @@ a {
 
 .button-max-kids:focus::before,
 .button-max-kids:focus::after {
-  background-color: var(--basic-black);
+  background-color: var(--basic-blue);
 }
 
 .button-max-adult:hover::before,
@@ -750,7 +750,7 @@ a {
 
 .button-max-adult:focus::before,
 .button-max-adult:focus::after {
-  background-color: var(--basic-black);
+  background-color: var(--basic-blue);
 }
 
 .button-max-kids::before,
@@ -806,6 +806,10 @@ a {
   background-image: url(../img/map.jpg);
   height: 595px;
   margin-bottom: -120px;
+}
+
+.google-map {
+  border: none;
 }
 
 .main-footer {
@@ -1121,7 +1125,7 @@ a:active path {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 80%;
   height: 2px;
   background: var(--basic-white);
 }
@@ -1142,11 +1146,11 @@ a:active path {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 0%;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 80%;
 }
 
 .toggle-min:hover {
@@ -1228,8 +1232,8 @@ a:active path {
   display: flex;
   padding-left: 73px;
   padding-right: 85px;
-  padding-top: 26px;
-  padding-bottom: 29px;
+  padding-top: 17px;
+  padding-bottom: 19px;
   align-items: center;
 }
 
@@ -1319,8 +1323,13 @@ a:active path {
   margin-left: auto;
 }
 
-.sort_up {
-  margin-right: 22px;
+li .sort_up {
+  padding: 0;
+  margin: 0;
+}
+
+.sort_down {
+  margin-left: 22px;
 }
 
 .sort_up:before {
@@ -1331,6 +1340,7 @@ a:active path {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 11px solid var(--triangle-grey);
+  margin-top: 6px;
 }
 
 .sort_up:hover:before {
@@ -1342,7 +1352,7 @@ a:active path {
 }
 
 .sort_up:focus:before {
-  border-bottom: 11px solid var(--basic-black);
+  border-bottom: 11px solid var(--basic-blue);
 }
 
 .sort_down:after {
@@ -1353,6 +1363,7 @@ a:active path {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 11px solid var(--basic-blue);
+  margin-top: 6px;
 }
 
 .sort_down:hover:after {
@@ -1364,7 +1375,7 @@ a:active path {
 }
 
 .sort_down:focus:after {
-  border-top: 11px solid var(--basic-black);
+  border-top: 11px solid var(--basic-blue);
 }
 
 .hotels_list {

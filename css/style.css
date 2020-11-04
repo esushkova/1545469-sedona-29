@@ -132,7 +132,7 @@ a {
 .welcome {
   width: auto;
   height: 509px;
-  background: url(../img/Shape.png) 100% 100% no-repeat, url(../img/main_background_photo.svg) 100% 100% no-repeat, #333333;
+  background: url(../img/shape.png) 100% 100% no-repeat, url(../img/main-background-photo.svg) 100% 100% no-repeat, #333333;
 }
 
 .welcome_logo {
@@ -1313,11 +1313,6 @@ a:active path {
   display: flex;
   padding: 0;
   margin-left: auto;
-}
-
-li .sort_up {
-  padding: 0;
-  margin: 0;
 }
 
 .sort_down {

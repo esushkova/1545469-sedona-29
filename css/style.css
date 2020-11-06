@@ -904,11 +904,16 @@ a {
   fill: var(--copyright);
 }
 
-a:hover path {
+.copyright-link:hover path {
   fill: var(--basic-blue);
 }
 
-a:active path {
+.copyright-link:focus path {
+  fill: var(--basic-blue);
+}
+
+.copyright-link:active path {
+  fill: var(--copyright);
   fill-opacity: 0.3;
 }
 
@@ -925,8 +930,12 @@ a:active path {
 }
 
 .networks_icon:active {
-  background-color: var(--copyright);
+  background-color: var(--darkest-blue);
   fill-opacity: 0.3;
+}
+
+.networks_icon:focus {
+  background-color: var(--darker-blue);
 }
 
 .hotels-body {
